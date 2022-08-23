@@ -33,31 +33,31 @@
 	},
 	"tabBar": {
 		"color": "#8b8b8b",
-		"selectedColor": "#0052d9",
+		"selectedColor": "#181818",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
 		"list": [{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/logo.png",
-				"selectedIconPath": "static/logo.png",
+				"iconPath": "static/tabbar/house1.png",
+				"selectedIconPath": "static/tabbar/house2.png",
 				"text": "首页"
 			},
 			{
 				"pagePath": "pages/market/index",
-				"iconPath": "static/logo.png",
-				"selectedIconPath": "static/logo.png",
+				"iconPath": "static/tabbar/ticket1.png",
+				"selectedIconPath": "static/tabbar/ticket2.png",
 				"text": "市场"
 			},
 			{
 				"pagePath": "pages/social/index",
-				"iconPath": "static/logo.png",
-				"selectedIconPath": "static/logo.png",
+				"iconPath": "static/tabbar/heart1.png",
+				"selectedIconPath": "static/tabbar/heart2.png",
 				"text": "票圈"
 			},
 			{
 				"pagePath": "pages/wode/index",
-				"iconPath": "static/logo.png",
-				"selectedIconPath": "static/logo.png",
+				"iconPath": "static/tabbar/user1.png",
+				"selectedIconPath": "static/tabbar/user2.png",
 				"text": "我的"
 			}
 		]

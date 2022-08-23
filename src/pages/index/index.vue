@@ -1,6 +1,10 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png" />
+    <van-swipe :autoplay="3000" lazy-render>
+      <van-swipe-item v-for="image in images" :key="image">
+        <img :src="image" />
+      </van-swipe-item>
+    </van-swipe>
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view>
@@ -8,9 +12,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-const title = ref('首页')
+import { ref } from "vue";
 
+const title = ref("首页");
+const images = [
+  "https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg",
+  "https://fastly.jsdelivr.net/npm/@vant/assets/apple-2.jpeg",
+];
 </script>
 
 <style>
