@@ -38,8 +38,8 @@
 		"backgroundColor": "#ffffff",
 		"list": [{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/tabbar/house1.png",
-				"selectedIconPath": "static/tabbar/house2.png",
+				"iconPath": "static/tabbar/home-outline.png",
+				"selectedIconPath": "static/tabbar/home.png",
 				"text": "首页"
 			},
 			{

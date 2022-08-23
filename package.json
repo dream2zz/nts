@@ -55,6 +55,7 @@
     "@dcloudio/uni-cli-shared": "^3.0.0-alpha-3050420220804004",
     "@dcloudio/uni-stacktracey": "^3.0.0-alpha-3050420220804004",
     "@dcloudio/vite-plugin-uni": "^3.0.0-alpha-3050420220804004",
+    "@mdi/font": "^7.0.96",
     "typescript": "^4.7.4",
     "vite": "^2.9.14",
     "vite-plugin-vuetify": "^1.0.0-alpha.14"
