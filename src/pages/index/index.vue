@@ -1,14 +1,21 @@
 <template>
-  <view class="content">
-    <van-swipe :autoplay="3000" lazy-render>
-      <van-swipe-item v-for="image in images" :key="image">
-        <img :src="image" />
-      </van-swipe-item>
-    </van-swipe>
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
-    </view>
-  </view>
+
+    <v-carousel
+      cycle
+      hide-delimiter-background
+      height="100"
+      class="pa-3"
+      show-arrows="hover"
+    >
+      <v-carousel-item v-for="(slide, i) in slides" :key="i">
+        <v-sheet :color="colors[i]" height="100%">
+          <div class="d-flex fill-height justify-center align-center">
+            <div class="text-h2">{{ slide }} Slide</div>
+          </div>
+        </v-sheet>
+      </v-carousel-item>
+    </v-carousel>
+
 </template>
 
 <script setup lang="ts">
@@ -19,32 +26,17 @@ const images = [
   "https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg",
   "https://fastly.jsdelivr.net/npm/@vant/assets/apple-2.jpeg",
 ];
+
+const colors = [
+  "indigo",
+  "warning",
+  "pink darken-2",
+  "red lighten-1",
+  "deep-purple accent-4",
+];
+const slides = ["First", "Second", "Third", "Fourth", "Fifth"];
 </script>
 
 <style>
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin-top: 200rpx;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50rpx;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
-}
 </style>
