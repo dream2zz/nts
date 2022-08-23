@@ -29,7 +29,6 @@ const images = [
   },
 ];
 
-
 </script>
 
 <style>
