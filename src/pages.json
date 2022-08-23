@@ -3,30 +3,45 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-
+				"navigationBarTitleText":"首页"
 			}
 		},
 		{
 			"path": "pages/market/index",
 			"style": {
-
+				"navigationBarTitleText":"市场",
+				"titleNView": {
+					"backButton": {
+						"background": "#00FF00"
+					}
+				}
 			}
 		},
 		{
 			"path": "pages/social/index",
 			"style": {
-
+				"navigationBarTitleText":"票圈"
 			}
 		},
 		{
 			"path": "pages/wode/index",
 			"style": {
-
+				"navigationBarTitleText":"我的"
 			}
 		}
 	],
 	"globalStyle": {
-		"titleNView": false
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "票务",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"titleNView": {
+			"searchInput": {
+				"backgroundColor": "#fff",
+				"borderRadius": "6px", 
+				"placeholder": "请输入搜索内容"
+			}
+		}
 	},
 	"tabBar": {
 		"color": "#8b8b8b",
